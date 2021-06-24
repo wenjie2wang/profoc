@@ -2,6 +2,7 @@
 
 export(batch)
 export(online)
+export(online_old)
 export(oracle)
 importFrom(Rcpp,sourceCpp)
 useDynLib(profoc, .registration = TRUE)
