@@ -7,12 +7,15 @@ Calculates predictions based on new expert advice.
 This does not update weights. If new observations are available
 use update instead. The latter updates and computes predictions.}
 \usage{
-\method{predict}{online}(object, new_experts)
+\method{predict}{online}(object, new_experts, ...)
 }
 \arguments{
 \item{object}{Object of class inheriting from 'online'}
 
 \item{new_experts}{new expert advices}
+}
+\value{
+\code{predict.online} produces an updated model object.
 }
 \description{
 Predict method for online models

@@ -4,7 +4,10 @@
 #' use update instead. The latter updates and computes predictions.
 #' @param object Object of class inheriting from 'online'
 #' @param new_experts new expert advices
+#' @param ...  further arguments are ignored
+#' @return \code{predict.online} produces an updated model object.
+#'
 #' @export
-predict.online <- function(object, new_experts) {
+predict.online <- function(object, new_experts, ...) {
     predict_online(object, new_experts)
 }
