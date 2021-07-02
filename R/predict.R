@@ -6,7 +6,7 @@
 #' @param new_experts new expert advices
 #' @param ...  further arguments are ignored
 #' @return \code{predict.online} produces an updated model object.
-#'
+#' @importFrom stats predict
 #' @rdname online
 #' @export
 predict.online <- function(object, new_experts, ...) {

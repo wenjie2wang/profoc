@@ -60,7 +60,6 @@ using namespace arma;
 //' trace = TRUE, init_weights = NULL, lead_time = 0, allow_quantile_crossing = FALSE,
 //' soft_threshold = -Inf, ex_post_soft_threshold = FALSE, hard_threshold = -Inf,
 //' ex_post_hard_threshold = FALSE, max_parameter_combinations = 100)
-//' @importFrom stats predict
 //' @export
 // [[Rcpp::export]]
 Rcpp::List online(
