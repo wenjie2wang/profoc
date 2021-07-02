@@ -13,3 +13,9 @@ devtools::test()
 # Merge develop into main, without squashing commits, wihtout extra merge commit
 
 devtools::load_all()
+
+remotes::install_github("berrij/profoc@predict_method")
+
+?profoc::online
+
+?opera::oracle()
