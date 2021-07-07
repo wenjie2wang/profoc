@@ -59,6 +59,21 @@ plot.online <- function(x, ...) {
     )
 }
 
+#' @rdname online
+#' @export
+autoplot.online <- function(object, ...) {
+    weights <- object$weights[nrow(object$weights), , ]
+    p <- object$specification$data$tau
+    weight <- matrix(weights)
+    Expert <- as.character(rep(seq_len(ncol(weights)), each = nrow(weights)))
+    df <- data.frame(weight, Expert, p)
+
+    ggplot2::ggplot(df, ggplot2::aes(x = p, y = weight, fill = Expert)) +
+        ggplot2::theme_minimal() +
+        ggplot2::geom_area()
+}
+
+
 #' Print method for online models
 #' Prints the average loss of all experts (E) and the forecast combination (FC).
 #' @param x Object of class inheriting from 'online'
