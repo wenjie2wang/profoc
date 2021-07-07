@@ -52,7 +52,7 @@ trace = TRUE
 
 \method{plot}{online}(x, ...)
 
-autoplot.online(object, ...)
+\method{autoplot}{online}(object, ...)
 
 \method{print}{online}(x, ...)
 }
