@@ -67,7 +67,7 @@ autoplot <- function(object, ...) {
 #' @rdname online
 #' @export
 autoplot.online <- function(object, ...) {
-    if (require("ggplot2")) {
+    if ("ggplot2" %in% installed.packages()) {
         weights <- object$weights[nrow(object$weights), , ]
         p <- object$specification$data$tau
         weight <- matrix(weights)
